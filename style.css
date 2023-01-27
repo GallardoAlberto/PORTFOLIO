@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /* border-style: solid; */
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+
+
+/* menu de inicio */
+
+.container--home {
+    display: flex;
+}
+
+.container--home--logo {
+    width: 15%;
+}
+
+.container--home--logo img {
+    height: 100%;
+    object-fit: cover ;
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
+.container--home--menu {
+    width: 100%;
+}
+
+.container--home--menu ul {
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+
+.container--home--menu ul li a {
+    padding: 40px 50px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+}
+
+.container--home--menu ul li a:hover{
+    color: #dc8d0f;
+}
+
+.container--home--menuMobile{
+    display: none;
+}
+
+.container--home--menuMobile {
+    width: 100%;
+}
+
+.container--home--menuMobile ul {
+    display: none;
+    justify-content: flex-end !important;
+}
+
+
+.container--home--menuMobile ul li a {
+    padding: 40px 50px;
+    transition: 0.3s;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+}
+
+.container--home--menuMobile ul li a:hover{
+    color: #dc8d0f;
+}
+
+/* imagen de fondo 1 */
+
+#img1 {
+    background-image: url("multimedia/img1.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+#img1 h1 {
+    padding: 0 150px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+
+
+/* apartado sobre mi */
+
+#aboutMe h1 {
+    text-align: center;
+    padding: 100px 0 100px 0px;
+    box-sizing: border-box;
+}
+
+.container--information {
+    text-align: center;
+    padding: 0 250px;
+    box-sizing: border-box;
+
+}
+
+.container--information--aboutme {
+    
+    display: grid;
+    place-items: center;
+    width: 55%;
+    margin: 0px auto;
+}
+
+.container--information--aboutme p{
+    padding: 50px 0;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.container--information--me {
+    width: 70%;
+    margin: 0px auto 0px auto;
+}
+
+.container--information--me img {
+    box-shadow: 0px 0px 3px 1px #000000;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 415px;
+    object-fit: cover;
+}
+
+/* habilidades cuadro con los certificados */
+
+#skills h1 {
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.container--buttons{
+    margin: 0 auto 50px auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.container--buttons i{
+    font-size: 80px;
+    padding: 40px;
+    margin: 0px auto;
+    transition: 0.3s;
+}
+
+.container--buttons i:hover{
+    color: #dc8d0f;
+    cursor: pointer;
+}
+
+h2{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.container--certificate {
+    transition: 1s;
+    padding: 100px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.container--certificate div{
+    padding: 20px;
+}
+
+#skills div img{
+    width: 400px;
+}
+
+/* imagen 2 */
+
+#img2 {
+    background-image: url("multimedia/img2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--clock{
+    padding: 20px;
+    color: rgb(246, 246, 246);
+    font-size: 70px;
+    text-shadow: 0px 0px 3px rgb(0, 0, 0);
+
+}
+/* formulario de contacto */
+
+#contact {
+    
+    display: grid;
+    place-items: center;
+}
+
+#contact h1 {
+    text-align: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.container--form {
+    box-shadow: 5px 5px 11px -6px #000000;
+    border-radius: 20px;
+    display: flex;
+    width: 50%;
+    background-color: rgb(238, 238, 238);
+}
+
+/* afecta al form */
+
+.container--form--contact {
+    width: 50%;
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+
+.container--form--contact label {
+    font-weight: 500;
+}
+
+.container--form--contact input,
+textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0;
+    resize: none;
+}
+
+.container--form--contact #enviar {
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100px !important;
+    background-color: #5086c4;
+    color: white;
+}
+
+/* el mapa del formulario */
+.container--form--map {
+    width: 50%;
+}
+
+.container--form--map iframe {
+    border-radius: 0px 20px 20px 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* contacto mios personales, y redes sociales */
+
+.container--mycontact {
+    width: 60%;
+    display: flex;
+}
+
+.container--mycontact--contact {
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    width: 50%;
+}
+
+.container--mycontact--contact h2{
+    text-align: center;
+}
+
+.container--mycontact--contact ul {
+    padding: 30px 0;
+}
+
+.container--mycontact--contact ul li {
+    padding: 10px 0;
+}
+
+.container--mycontact--media {
+
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    width: 50%;
+}
+
+.container--mycontact--media h2{
+    text-align: center;
+}
+
+.container--mycontact--media ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container--mycontact--media ul li {
+    padding: 30px;
+}
+
+.container--mycontact--media ul li a {
+    font-size: 40px;
+    color: black;
+}
+
+/* pie de pagina */
+
+#footer {
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 20vh;
+}
+
+#footer p {
+    color: white;
+}
+
+/* boton de subir al inicio */
+
+.fa-chevron-up{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: 0.3s;
+}
+
+.fa-chevron-up:hover{
+    background-color: #dc8d0f;
+    box-shadow: 0px 3px 5px black;
+}
+
+/* adaptado a pantallas */
+
+@media (max-width: 1406px) {
+
+    
+    /* apartado sobre mi */
+
+    .container--information--me{
+        width: 350px;
+    }
+
+    .container--information--aboutme{
+        width: 90%;
+    }
+
+    /* apartado del formulario */
+
+    .container--form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 1046px) {
+
+    
+    /* apartado de contacto a mi directamente */
+
+    .container--mycontact{
+        display: block;
+    }
+
+    .container--mycontact div{
+       margin: 0 auto;
+    }
+}
+
+@media (max-width: 1060px) {
+    /* HACER MENU HAMBURGUESA */
+
+    .container--information{
+        padding: 0 100px;
+    }
+    .container--information--aboutme{
+        width: 100%;
+    }
+
+    .container--information--me img{
+        box-shadow: 0px 0px 3px 1px #000000;
+        border-radius: 200px;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: 370px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* menu movil */
+    .container--home--menu{
+        display: none;
+    }
+    .container--home--menuMobile {
+        display: block;
+    }
+
+    .container--home--menuMobile i {
+        padding: 40px 50px;
+        transition: 0.3s;
+        font-size: 25px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* img1  */
+
+    #img1{
+        justify-content: center;
+    }
+    #img1 h1 {
+        padding: 0;
+        font-size: 40px;
+    }
+
+    /* sobre mi  */
+    .container--information{
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    /* formulario y mapa  */
+
+    .container--form{
+        display: block;
+    }
+
+    .container--form div{
+        width: 100%;
+    }
+
+    .container--form--map{
+        height: 300px;
+    }
+    /* apartado sobre mi mi contacto directo */
+
+    .container--mycontact{
+        width: 100%;
+    }
+
+    .container--mycontact--contact{
+        padding: 0;
+    }
+}
+
+@media (max-width: 622px) {
+
+    /* sobre mi */
+
+
+    .container--mycontact--contact{
+        width: 100%;
+    }
+
+    
+
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alberto Gallardo Morales - Web</title>
+</head>
+
+<body>
+
+    <div class="container" id="home">
+
+        <div class="container--home">
+
+            <div class="container--home--logo">
+                <img src="multimedia/logo.png" alt="logo">
+            </div>
+
+            <nav class="container--home--menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#">Works</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="container--home--menuMobile">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#">Works</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="container" id="img1">
+        <h1>Web Developer</h1>
+    </div>
+
+    <div class="container" id="aboutMe">
+
+        <h1>About me</h1>
+
+        <div class="container--information">
+
+            <div class="container--information--aboutme">
+
+                <div class="container--information--me">
+                    <img src="multimedia/foto1.jpeg" alt="">
+                </div>
+                
+                <p>
+                    My name is Alberto and I am a high school student in Web Application Development. Although I don't
+                    have
+                    professional experience in the field of web development yet, I am very interested in learning and
+                    growing as a developer.
+                    <br><br>
+
+                    I love technology and I am always trying to keep up with the latest trends and tools in the world of
+                    web
+                    development. I am learning to program in languages like HTML, CSS, JavaScript, Angular, etc... and I
+                    am
+                    working on personal projects to apply my knowledge and improve my skills.
+                    <br><br>
+
+                    In my free time, I enjoy reading and exploring new technologies and frameworks. I also love
+                    collaborating with other developers and learning from them.
+                    <br><br>
+
+                    I am excited to start my career as a web developer and I hope to be able to contribute my creativity
+                    and
+                    knowledge to a work team in the future. Thank you for visiting my website and I hope to work with
+                    you in
+                    the future.
+                </p>
+            </div>
+
+        
+        </div>
+
+    </div>
+
+    <div class="container" id="skills">
+       
+        <h1>Skills</h1>
+
+        
+        <div class="container--buttons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-brands fa-php"></i>
+
+        </div>
+
+        <h2 class="hide">HTML Certificates</h2>
+
+        <div class="container--certificate hide">
+            
+            <div class="certificate"><img src="multimedia/certificados/certificado_HTML_CSS.jpg" alt="certificado_HTML_CSS"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_HTML_CSS_JS.jpg" alt="certificado_HTML_CSS_JS"></div>
+            
+        </div>
+
+        <h2 class="hide">CSS Certificates</h2>
+
+        <div class="container--certificate hide">
+            
+            <div class="certificate"><img src="multimedia/certificados/certificado_HTML_CSS.jpg" alt="certificado_HTML_CSS"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_CSS_maquetacion.jpg" alt="certificado_CSS_maquetacion"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_HTML_CSS_JS.jpg" alt="certificado_HTML_CSS_JS"></div>
+            
+        </div>
+
+        <h2 class="hide">Javascript Certificates</h2>
+
+        <div class="container--certificate hide">
+            
+            <div class="certificate"><img src="multimedia/certificados/certificado_JS_principiante.jpg" alt="certificado_JS_principiante"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_JS_intermedio.jpg" alt="certificado_JS_intermedio"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_JS_DOM.jpg" alt="certificado_JS_DOM"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_HTML_CSS_JS.jpg" alt="certificado_HTML_CSS_JS"></div>
+
+        </div>
+
+        <h2 class="hide">SEO Certificates</h2>
+            
+        <div class="container--certificate hide">
+
+            <div class="certificate"><img src="multimedia/certificados/certificado_SEO.jpg" alt="certificado_SEO"></div>
+            
+        </div>
+
+        <h2 class="hide">PHP Certificates</h2>
+
+        <div class="container--certificate hide">
+            
+            <div class="certificate"><img src="multimedia/certificados/certificado_PHP_basico.jpg" alt="certificado_PHP_basico"></div>
+            <div class="certificate"><img src="multimedia/certificados/certificado_PHP_principiantes.jpg" alt="certificado_PHP_principiantes"></div>
+            
+        </div>
+
+        
+    </div>
+
+    <div class="container" id="img2">
+        <p class="container--clock"></p>
+    </div>
+
+    <div class="container" id="contact">
+
+        <h1>Contact us</h1>
+
+        <div class="container--form">
+
+            <div class="container--form--contact">
+
+                <form action="php/conexionBBDD.php" method="post">
+
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" name="name" placeholder="Your name" required />
+                    <br><br>
+
+                    <label for="phone">Phone number:</label>
+                    <br>
+                    <input type="tel" name="phone" placeholder="Your phone number" required />
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <br>
+                    <input type="email" name="email" placeholder="Your e-mail" required />
+                    <br><br>
+
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+                    <br><br>
+
+                    <input id="enviar" type="submit" value="Send"> 
+                </form>
+            </div>
+
+            <div class="container--form--map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24222.083518706026!2d-4.023884324952075!3d40.63516479522269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4173f62e5056e5%3A0x1d531a9dadd12755!2s28400%20Collado%20Villalba%2C%20Madrid!5e0!3m2!1ses!2ses!4v1674654755994!5m2!1ses!2ses"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <h1>Contact me directly</h1>
+
+        <div class="container--mycontact">
+
+            <div class="container--mycontact--contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><b>E-mail:</b> gallardo.alb.1998@gmail.com</li>
+                    <li><b>Phone:</b> +34 678 34 48 93</li>
+                </ul>
+            </div>
+
+            <div class="container--mycontact--media">
+                <h2>Social media</h2>
+                <ul>
+                    <li><a href="https://wa.me/678344983"><i class="fa-brands fa-whatsapp"></i></a>
+                    <li><a href="https://www.linkedin.com/in/alberto-gallardo-morales-036005253/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/GallardoAlberto"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/albertogmofficial/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="footer">
+
+        <p>Copyright &copy; Alberto Gallardo <script>document.write(new Date().getFullYear());</script></p>
+
+    </div>
+
+    <i class="fa-solid fa-chevron-up"></i>
+    <script src="https://kit.fontawesome.com/c98f52caa2.js" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/clock.js"></script>
+
+</body>
+
+</html>
+
