@@ -15,10 +15,14 @@
 /* menu de inicio */
 
 .container--home {
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
     display: flex;
 }
 
 .container--home--logo {
+    margin-left: 20px;
     width: 15%;
 }
 
@@ -44,7 +48,7 @@
     padding: 40px 50px;
     transition: 0.3s;
     font-size: 18px;
-    color: black;
+    color: white;
     font-weight: 500;
     display: grid;
     place-items: center;
@@ -82,6 +86,11 @@
     color: #dc8d0f;
 }
 
+/* espacio tipo margen */
+
+#space{
+    height: 100px;
+}
 /* imagen de fondo 1 */
 
 #img1 {
@@ -435,19 +444,53 @@ textarea {
 @media only screen and (max-width: 800px) {
 
     /* menu movil */
+
+    .container--home{
+        height: 100px;
+    }
+    .container--home--logo{
+        width: 50%;
+    }
+
+    .container--home--logo img{
+        margin: 0;
+        width: 100px;
+        height: 100px;
+    }
+
     .container--home--menu{
         display: none;
     }
     .container--home--menuMobile {
+        transition: 0.2s;
+        z-index: 2;
+        /* background-color: bisque; */
         display: block;
+        width: 90%;
     }
 
     .container--home--menuMobile i {
         padding: 40px 50px;
-        transition: 0.3s;
+        transition: 0.2s;
         font-size: 25px;
         display: flex;
         justify-content: flex-end;
+    }
+
+    .container--home--menuMobile ul{
+        transition: 0.2s;
+        display: none;
+        opacity: 0;
+    }
+
+    .container--home--menuMobile{
+        color: white;
+    }
+
+    .container--home--menuMobile ul li a{
+        color: white;
+        padding: 30px;
+
     }
 
     /* img1  */
@@ -466,9 +509,21 @@ textarea {
         width: 100%;
     }
 
+    /* habilidades */
+
+    .container--certificate{
+        padding: 50px 5%;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    #skills div img{
+        width: 300px;
+    }
+
     /* formulario y mapa  */
 
     .container--form{
+        border: 1px solid black;
         display: block;
     }
 
@@ -479,6 +534,13 @@ textarea {
     .container--form--map{
         height: 300px;
     }
+
+    .container--form--map iframe{
+        width: 99%;
+        height: 97%;
+        border-radius: 0 0 10px 10px;
+
+    }
     /* apartado sobre mi mi contacto directo */
 
     .container--mycontact{
@@ -488,17 +550,40 @@ textarea {
     .container--mycontact--contact{
         padding: 0;
     }
+
+    .fa-chevron-up:hover{
+        background-color: black;
+        box-shadow: 0 black;
+    }
 }
 
 @media (max-width: 622px) {
 
-    /* sobre mi */
 
+    /* sobre mi */
 
     .container--mycontact--contact{
         width: 100%;
     }
 
+}
+
+@media (max-width: 452px) {
+
+    #img1 h1{
+        font-size: 30px;
+    }
     
+    /* espacio de mi descripcion, del about me */
+
+    .container--information{
+        padding: 5%;
+    }
+
+    .container--information--me img{
+        width: 200px;
+        object-position: center;
+        
+    }
 
 }
