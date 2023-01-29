@@ -15,6 +15,7 @@
 /* menu de inicio */
 
 .container--home {
+    z-index: 1;
     background-color: #000000;
     width: 100%;
     position: fixed;
@@ -147,13 +148,11 @@
 }
 
 .container--information--me img {
-    box-shadow: 0px 0px 3px 1px #000000;
-    border-radius: 10px;
+    border-radius: 300px;
+    box-shadow: 0px 5px 5px 1px #000000;
     display: block;
     margin: 0 auto;
-    width: 90%;
-    height: 415px;
-    object-fit: cover;
+    width: 85%;
 }
 
 /* habilidades cuadro con los certificados */
@@ -404,11 +403,7 @@ textarea {
     .container--form{
         width: 70%;
     }
-}
 
-@media (max-width: 1046px) {
-
-    
     /* apartado de contacto a mi directamente */
 
     .container--mycontact{
@@ -420,6 +415,7 @@ textarea {
     }
 }
 
+
 @media (max-width: 1060px) {
     /* HACER MENU HAMBURGUESA */
 
@@ -430,15 +426,6 @@ textarea {
         width: 100%;
     }
 
-    .container--information--me img{
-        box-shadow: 0px 0px 3px 1px #000000;
-        border-radius: 200px;
-        display: block;
-        margin: 0 auto;
-        width: 70%;
-        height: 370px;
-        object-fit: cover;
-    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -497,6 +484,7 @@ textarea {
 
     #img1{
         justify-content: center;
+        background-position: center;
     }
     #img1 h1 {
         padding: 0;
@@ -581,7 +569,7 @@ textarea {
     }
 
     .container--information--me img{
-        width: 200px;
+        width: 230px;
         object-position: center;
         
     }

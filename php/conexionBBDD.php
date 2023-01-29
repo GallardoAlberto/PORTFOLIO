@@ -1,9 +1,9 @@
 <?php
 
     $server = 'localhost';
-    $user = 'root';
-    $password = '';
-    $bbdd = 'portfolio';
+    $user = 'id20217472_root';
+    $password = '63yY>eZED^*x7A_O';
+    $bbdd = 'id20217472_portfolio';
 
     $connect = mysqli_connect($server, $user, $password, $bbdd);
 
